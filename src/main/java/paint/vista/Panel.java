@@ -32,7 +32,7 @@ public class Panel extends JPanel implements PropertyChangeListener {
         }
 
         BufferedImage rsm = new BufferedImage(
-                modelo.getAncho(), modelo.getAlto(), BufferedImage.TYPE_INT_ARGB);
+                modelo.getAncho(), modelo.getAlto(), BufferedImage.TYPE_INT_RGB);//TYPE_INT_ARGB
         Graphics2D g2d = rsm.createGraphics();
 
         modelo.dibujar(g2d);

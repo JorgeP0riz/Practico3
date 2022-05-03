@@ -1,8 +1,6 @@
 package paint.vista;
 
-import paint.modelo.Imagen;
-import paint.modelo.Transformar;
-import paint.modelo.TransformarGris;
+import paint.modelo.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -52,8 +50,10 @@ public class Ventana extends JFrame {
     }
 
     private void btnGris_clicked() {
-        Transformar tonosDeGris = new TransformarGris(modelo);
+        Transformar tonosDeGris = new TransformarBYN(modelo);
         tonosDeGris.transformar();
+        /*Transformar tonosDeGris = new FlipImagenHorizontal(modelo);
+        tonosDeGris.transformar();*/
     }
 
     private void btnHacer_clicked() {
